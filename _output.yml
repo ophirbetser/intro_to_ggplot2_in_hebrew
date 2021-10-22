@@ -5,4 +5,4 @@ bookdown::gitbook:
       before: |
         <li><a href="./">מבוא ל ggplot2 בעברית</a></li>
       after: |
-        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+        <li style="text-align:left;"><a href="https://ophirbetser.netlify.app/" target="blank">ophir betser</a></li>

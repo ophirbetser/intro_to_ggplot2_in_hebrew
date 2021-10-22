@@ -1,9 +1,17 @@
 --- 
-title: "YOUR TITLE HERE"
-author: "YOUR NAME HERE"
-date: "`r Sys.Date()`"
+title: "מבוא ל ggplot2 בעברית"
+author: "אופיר בצר"
+date: "2021-10-22"
 site: bookdown::bookdown_site
 ---
 
-# Down the rabbit-hole
+# על הספר
+
+בלה בלה בלה
+
+### איך לקרוא את הספר
+
+בלה בלה בלה
+
+### יצירת קשר
 

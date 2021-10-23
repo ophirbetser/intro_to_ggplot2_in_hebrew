@@ -212,6 +212,8 @@ R
 <p>מעולה! כעת הספריה מותקנת על המחשב שלכם.
 כעת, בכל פעם שתרצו לעשות בה שימוש תהיו חייבים להריץ את הפקודה</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span></code></pre></div>
+<pre><code>## Want to understand how all the pieces fit together? Read R for Data Science:
+## https://r4ds.had.co.nz/</code></pre>
 <p>אשר תגרום ל
 R
 להבין שאתם מעוניינים לעשות שימוש בפקודות
@@ -231,19 +233,19 @@ R
 “Hello World”.</p>
 <p>לדעתי יכול להיות נחמד להדגים בניה של גרף פשוט במדריך על גרפים!
 אבל אל תבהלו, כבר בסוף קריאת הפרק הבא תבינו את רוב מה שאדגים עכשיו.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(iris) <span class="sc">+</span></span>
-<span id="cb4-2"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(</span>
-<span id="cb4-3"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(</span>
-<span id="cb4-4"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#cb4-4" aria-hidden="true" tabindex="-1"></a>      <span class="at">x =</span> Sepal.Length,</span>
-<span id="cb4-5"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#cb4-5" aria-hidden="true" tabindex="-1"></a>      <span class="at">y =</span> Sepal.Width,</span>
-<span id="cb4-6"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#cb4-6" aria-hidden="true" tabindex="-1"></a>      <span class="at">color =</span> Species,</span>
-<span id="cb4-7"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#cb4-7" aria-hidden="true" tabindex="-1"></a>      <span class="at">shape =</span> Species</span>
-<span id="cb4-8"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#cb4-8" aria-hidden="true" tabindex="-1"></a>      )</span>
-<span id="cb4-9"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#cb4-9" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
-<span id="cb4-10"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() <span class="sc">+</span></span>
-<span id="cb4-11"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#cb4-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
-<span id="cb4-12"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#cb4-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">&quot;This is my Plot!&quot;</span></span>
-<span id="cb4-13"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#cb4-13" aria-hidden="true" tabindex="-1"></a>    )</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(iris) <span class="sc">+</span></span>
+<span id="cb5-2"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(</span>
+<span id="cb5-3"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(</span>
+<span id="cb5-4"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#cb5-4" aria-hidden="true" tabindex="-1"></a>      <span class="at">x =</span> Sepal.Length,</span>
+<span id="cb5-5"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#cb5-5" aria-hidden="true" tabindex="-1"></a>      <span class="at">y =</span> Sepal.Width,</span>
+<span id="cb5-6"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#cb5-6" aria-hidden="true" tabindex="-1"></a>      <span class="at">color =</span> Species,</span>
+<span id="cb5-7"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#cb5-7" aria-hidden="true" tabindex="-1"></a>      <span class="at">shape =</span> Species</span>
+<span id="cb5-8"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#cb5-8" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb5-9"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#cb5-9" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
+<span id="cb5-10"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#cb5-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() <span class="sc">+</span></span>
+<span id="cb5-11"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#cb5-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb5-12"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#cb5-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">&quot;This is my Plot!&quot;</span></span>
+<span id="cb5-13"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#cb5-13" aria-hidden="true" tabindex="-1"></a>    )</span></code></pre></div>
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
 
 </div>

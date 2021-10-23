@@ -5,6 +5,8 @@ date: "2021-10-22"
 site: bookdown::bookdown_site
 ---
 
+
+
 # על הספר
 
 הספר הזה נועד ללמד משתמש שיש לו אפס היכרות עם הספריה 
@@ -27,3 +29,11 @@ R,
 
 במידה ויש נקודה לא בהירה, מצאתם טעות הקלדה, או חוסר דיוק - מוזמים ליצור איתי קשר במייל
 ophir.betser@gmail.com
+
+
+
+```{r eval=FALSE, include=TRUE}
+pacman::p_load(
+  ggplot2
+)
+```

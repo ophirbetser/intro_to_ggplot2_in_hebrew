@@ -145,16 +145,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2" data-path="למה-כדאי-להשתמש-ב-ggplot2.html"><a href="למה-כדאי-להשתמש-ב-ggplot2.html"><i class="fa fa-check"></i><b>2</b> למה כדאי להשתמש ב ggplot2</a>
 <ul>
 <li class="chapter" data-level="2.1" data-path="למה-כדאי-להשתמש-ב-ggplot2.html"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#התקנת-הספריה"><i class="fa fa-check"></i><b>2.1</b> התקנת הספריה</a></li>
-<li class="chapter" data-level="2.2" data-path="למה-כדאי-להשתמש-ב-ggplot2.html"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#התקנת-הספריה-1"><i class="fa fa-check"></i><b>2.2</b> התקנת הספריה</a></li>
-<li class="chapter" data-level="2.3" data-path="למה-כדאי-להשתמש-ב-ggplot2.html"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#ספריות-משלימות"><i class="fa fa-check"></i><b>2.3</b> ספריות משלימות</a></li>
-<li class="chapter" data-level="2.4" data-path="למה-כדאי-להשתמש-ב-ggplot2.html"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#hello-world"><i class="fa fa-check"></i><b>2.4</b> Hello World</a></li>
+<li class="chapter" data-level="2.2" data-path="למה-כדאי-להשתמש-ב-ggplot2.html"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#ספריות-משלימות"><i class="fa fa-check"></i><b>2.2</b> ספריות משלימות</a></li>
+<li class="chapter" data-level="2.3" data-path="למה-כדאי-להשתמש-ב-ggplot2.html"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#hello-world"><i class="fa fa-check"></i><b>2.3</b> Hello World</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="תחביר-בסיסי.html"><a href="תחביר-בסיסי.html"><i class="fa fa-check"></i><b>3</b> תחביר בסיסי</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="תחביר-בסיסי.html"><a href="תחביר-בסיסי.html#התחביר-של-גרף"><i class="fa fa-check"></i><b>3.1</b> התחביר של גרף</a></li>
-<li class="chapter" data-level="3.2" data-path="תחביר-בסיסי.html"><a href="תחביר-בסיסי.html#נתונים"><i class="fa fa-check"></i><b>3.2</b> נתונים</a></li>
-<li class="chapter" data-level="3.3" data-path="תחביר-בסיסי.html"><a href="תחביר-בסיסי.html#מערכת-צירים"><i class="fa fa-check"></i><b>3.3</b> מערכת צירים</a></li>
-<li class="chapter" data-level="3.4" data-path="תחביר-בסיסי.html"><a href="תחביר-בסיסי.html#גיאומטריה"><i class="fa fa-check"></i><b>3.4</b> גיאומטריה</a></li>
+<li class="chapter" data-level="3.1" data-path="תחביר-בסיסי.html"><a href="תחביר-בסיסי.html#התחביר-של-גרף"><i class="fa fa-check"></i><b>3.1</b> התחביר של גרף</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="תחביר-בסיסי.html"><a href="תחביר-בסיסי.html#נתונים"><i class="fa fa-check"></i><b>3.1.1</b> נתונים</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="תחביר-בסיסי.html"><a href="תחביר-בסיסי.html#מערכת-צירים"><i class="fa fa-check"></i><b>3.2</b> מערכת צירים</a></li>
+<li class="chapter" data-level="3.3" data-path="תחביר-בסיסי.html"><a href="תחביר-בסיסי.html#גיאומטריה"><i class="fa fa-check"></i><b>3.3</b> גיאומטריה</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="סוגי-גיאומטריות.html"><a href="סוגי-גיאומטריות.html"><i class="fa fa-check"></i><b>4</b> סוגי גיאומטריות</a>
 <ul>
@@ -197,21 +198,37 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="תחביר-בסיסי" class="section level1" number="3">
 <h1><span class="header-section-number"> 3</span> תחביר בסיסי</h1>
-<p>בלה בלה בלה</p>
+<p>ראשי התיבות שמהן מורכב השם
+״ggplot"
+הוא
+grammar of graphics.</p>
+<p>הפילוסופיה שעומדת מאחורי השם המפוצץ היא שניתן לפרק כל ויזאליזציה, מהפשוטה שבינהן למורכבות והמסובכות ביותר - למספר עקרונות משותפים.
+כל גרף מכיל נתונים.
+בכל גרף יש מערכת צירים.
+ובכל גרף יש איזו ״גיאומטריה״ - צורה שבה מציגים את הנתונים.
+קוד
+ggplot
+יכתב בדיוק בצורה הזאת, נצהיר שלב אחר שלב על החלקי הבסיסים שמהם נראה להרכיב את הגרף שלנו, עד שנקבל את צורתו המוגמרת והרצויה.</p>
 <div id="התחביר-של-גרף" class="section level2" number="3.1">
 <h2><span class="header-section-number">3.1</span> התחביר של גרף</h2>
 <p>בלה בלה בלה</p>
+<div id="נתונים" class="section level3" number="3.1.1">
+<h3><span class="header-section-number">3.1.1</span> נתונים</h3>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="תחביר-בסיסי.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(iris)</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
 </div>
-<div id="נתונים" class="section level2" number="3.2">
-<h2><span class="header-section-number">3.2</span> נתונים</h2>
-<p>בלה בלה בלה</p>
 </div>
-<div id="מערכת-צירים" class="section level2" number="3.3">
-<h2><span class="header-section-number">3.3</span> מערכת צירים</h2>
-<p>בלה בלה בלה</p>
+<div id="מערכת-צירים" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> מערכת צירים</h2>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="תחביר-בסיסי.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(iris)</span></code></pre></div>
+<pre><code>## [1] &quot;Sepal.Length&quot; &quot;Sepal.Width&quot;  &quot;Petal.Length&quot; &quot;Petal.Width&quot;  &quot;Species&quot;</code></pre>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="תחביר-בסיסי.html#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(iris) <span class="sc">+</span></span>
+<span id="cb8-2"><a href="תחביר-בסיסי.html#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> Sepal.Length, <span class="at">y =</span> Sepal.Width)</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p>ggplot(iris)</p>
 </div>
-<div id="גיאומטריה" class="section level2" number="3.4">
-<h2><span class="header-section-number">3.4</span> גיאומטריה</h2>
+<div id="גיאומטריה" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> גיאומטריה</h2>
 <p>בלה בלה בלה</p>
 
 </div>

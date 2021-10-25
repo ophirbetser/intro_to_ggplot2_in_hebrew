@@ -1,21 +1,94 @@
 
-# סוגי גיאומטריות
+# מבוא לסוגי גיאומטריות
 
-בלה בלה בלה
+בפרק הזה אני אמשיך להציג בעזרת הדאטה-סט
+`iris`
+את סוגי הגיאומטריות הכי שכיחות לשימוש.
+הפרק לא יהיה מדריך מלא ומקיף לשימוש והאפשרויות שכל גיאומטריה מציאה, לכן אין לקרוא אותו ככזה.
 
 ## גרף פיזור
 
-בלה בלה בלה
+גרף פיזור הוא גרך מעולה לראות קשר בין 2 משתנים. אני אשתמש באותו הקוד שעשינו בו שימוש בגרף בפרק הקודם, אך אוסיף למערכת הצירים שלי ארגומנט חדש:
+`color`.
+כך, ״אגיד״ שאני רוצה לצבוע כך נקודה בצבע שונה על פי משתנה מסויים. 
+סו הנתונים שלנו מכיל מידע על 3 זנים שונים של פרחי איריס, אז אני אצבע כל זן בצבע אחר
+
+```{r}
+ggplot(iris) +
+  aes(x = Sepal.Length, y = Sepal.Width, color = Species) +
+  geom_point()
+```
+
+---
+
+מגניב!
+
+דברים נחמדים נוספים שאני יכול להוסיף לגרף שלי, הם גודל שונה לכל נקודה על פי משתנה אחר, דבר שלמעשה מוסיף לגרף הדו מימדי מימד נתונים רציף נוסף.
+
+בנוסף - אפשר לתת לכל נקודה צורה אחרת, על פי משנה קטורי שנבחר. אשלב זאת בקוד שלי.
+
+```{r}
+ggplot(iris) +
+  aes(
+    x = Sepal.Length, y = Sepal.Width,
+    color = Species, shape = Species, size = Petal.Width
+    ) +
+  geom_point()
+```
+
 
 ## גרף עמודות 
 
-בלה בלה בלה
+
+```{r}
+ggplot(iris) +
+  aes(x = Species, fill = Species) +
+  geom_bar()
+```
+
+```{r}
+library(data.table)
+library(tidyverse)
+
+dt <- as.data.table(iris)
+```
+
+```{r}
+dt[,
+  .(mean_S_L = mean(Sepal.Length)),
+  by = Species] %>% 
+ggplot() +
+  aes(x = Species, y = mean_S_L, fill = Species) +
+  geom_bar(stat = "identity")
+```
+
 
 ## היסטוגרמה
 
-בלה בלה בלה
+```{r}
+ggplot(iris) +
+  aes(x = Sepal.Length) +
+  geom_histogram()
+```
+
+```{r}
+ggplot(iris) +
+  aes(x = Sepal.Length) +
+  geom_histogram(bins = 10)
+```
+
+
+```{r}
+ggplot(iris) +
+  aes(x = Sepal.Length, fill = Species) +
+  geom_histogram(bins = 10)
+```
 
 ## גרף קופסא
 
-בלה בלה בלה
+```{r}
+ggplot(iris) +
+  aes(x = Species, y = Sepal.Length) +
+  geom_boxplot()
+```
 

@@ -229,14 +229,14 @@ ggplot
 <code>ggplot(DATA_SET_NAME)</code>
 והרצה שלה תיצור לנו קנבס ריק שעליו נוכל ״לצייר״ את הנתונים הספציפים שאנחנו נבקש מ
 R</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="תחביר-בסיסי.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(iris)</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="תחביר-בסיסי.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(iris)</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
 </div>
 </div>
 <div id="מערכת-צירים" class="section level2" number="3.2">
 <h2><span class="header-section-number">3.2</span> מערכת צירים</h2>
 <p>בסט הנתונים שבעזרתו אני מדגים את בניית הגרף הבסיסי יש 150 תצפיות, ו 5 עמודות, שאלו הם שמותיהן:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="תחביר-בסיסי.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(iris)</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="תחביר-בסיסי.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(iris)</span></code></pre></div>
 <pre><code>## [1] &quot;Sepal.Length&quot; &quot;Sepal.Width&quot;  &quot;Petal.Length&quot; &quot;Petal.Width&quot;  &quot;Species&quot;</code></pre>
 <p>אני מעוניין שמערכת הצירים שלי תורכב מ
 <code>Sepal.Length</code>
@@ -252,9 +252,9 @@ ggplot
 שיצרנו בעזרת הסימן
 <code>+</code>
 את הקוד הבא</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="תחביר-בסיסי.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(iris) <span class="sc">+</span></span>
-<span id="cb4-2"><a href="תחביר-בסיסי.html#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> Sepal.Length, <span class="at">y =</span> Sepal.Width)</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="תחביר-בסיסי.html#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(iris) <span class="sc">+</span></span>
+<span id="cb8-2"><a href="תחביר-בסיסי.html#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> Sepal.Length, <span class="at">y =</span> Sepal.Width)</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
 </div>
 <div id="גיאומטריה" class="section level2" number="3.3">
 <h2><span class="header-section-number">3.3</span> גיאומטריה</h2>
@@ -263,17 +263,17 @@ ggplot
 ישנן סוגי גיאומטריות רבות, אבל לעניננו - כדי ליצר גרף פיזור
 אשתמש בגיאומריה שנקראת
 <code>geom_point</code></p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="תחביר-בסיסי.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(iris) <span class="sc">+</span></span>
-<span id="cb5-2"><a href="תחביר-בסיסי.html#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> Sepal.Length, <span class="at">y =</span> Sepal.Width) <span class="sc">+</span></span>
-<span id="cb5-3"><a href="תחביר-בסיסי.html#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="תחביר-בסיסי.html#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(iris) <span class="sc">+</span></span>
+<span id="cb9-2"><a href="תחביר-בסיסי.html#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> Sepal.Length, <span class="at">y =</span> Sepal.Width) <span class="sc">+</span></span>
+<span id="cb9-3"><a href="תחביר-בסיסי.html#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
 </div>
 <div id="שילוב-חוקי-תחביר" class="section level2" number="3.4">
 <h2><span class="header-section-number">3.4</span> שילוב חוקי תחביר</h2>
 <p>בדומה לכך שניתן לבטא את אותה המשמעות של משפט - עם אותן המילים - במספר דרכים שונות, כך ניתן להשתמש בתחביר מעט שונה כדי ליצר את אותו הגרף. לדוגמא, את אותו הגרף ניתן ״להביע״ גם בעזרת הקוד הזה, שבו מערכת הצירים הרצויה מוכרזת בתוך הגיאומטריה המבוקשת.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="תחביר-בסיסי.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(iris) <span class="sc">+</span></span>
-<span id="cb6-2"><a href="תחביר-בסיסי.html#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x =</span> Sepal.Length, <span class="at">y =</span> Sepal.Width))</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="תחביר-בסיסי.html#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(iris) <span class="sc">+</span></span>
+<span id="cb10-2"><a href="תחביר-בסיסי.html#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x =</span> Sepal.Length, <span class="at">y =</span> Sepal.Width))</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
 <p>לעיתים לא תהיה לכך משמעות כלל, אך כאשר נוסיף שכבות (לא להיבהל - זה מושג שיובהר בהמשך)
 לגרפים שלנו, שיהפכו אותם למורכבים יותר, תהיה חשיבות למיקום שבו נצהיר על מערכת הצירים שלנו.</p>
 

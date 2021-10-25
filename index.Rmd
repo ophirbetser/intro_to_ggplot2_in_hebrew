@@ -16,7 +16,8 @@ site: bookdown::bookdown_site
 R,
 היכרות עם סוגי המשתנים בשפה, הפקודות הבסיסיות בה, ומניפולציות על טבלאות נתונים. את כל הדברים האלה ניתן ללמוד בדרך קריאה זריזה של הספרים הקודמים שכתבתי
 
-דגכדגכ כדגכדגכדגכ
+- [מבוא לתכנות R בעברית](https://ophirbetser.github.io/intro_to_R_in_hebrew/)
+- [אינדקס ספריות](https://github.com/ophirbetser/r_pac_index_in_heb)
 
 ## איך לקרוא את הספר
 

@@ -15,8 +15,42 @@
 
 ### התקנה
 
-בלה בלה בלה
+ראשית יש להוריד את הספריה
+
+```{r eval=FALSE, include=TRUE}
+install.packages("esquisse")
+```
+
+לאחר מכן צריך לעשות ריסיט לסשן הנוכחי של 
+Rsudio
+
+```{r eval=FALSE, include=TRUE}
+.rs.restartR()
+```
+
+מגניב, כעת הספריה מותקנת אצלכם!
+יתכן ותתבקשו באופן אוטומטי להוריד עוד חבילות, פשוט לחצו
+`yes`
+ותנו לתוכנה לעשות את שלה...
+
 
 ### שימוש
 
-בלה בלה בלה
+לחצו על הכפתור הבא, או הריצו את הקוד הזה:
+![](04-esquisse_insertimage_1.png)
+
+```{r eval=FALSE, include=TRUE}
+esquisse:::esquisser()
+```
+
+ואז יפתח החלון הזה
+
+![](04-esquisse_insertimage_2.png)
+
+בחרו מסד נתונים מתוך אלו שטעונים בסביבת העבודה שלכם
+
+![](04-esquisse_insertimage_3.png)
+
+שחקו עם הספריה, צרו גרף, ולבסוף העתיקו את הקוד
+
+![](04-esquisse_insertimage_4.png)

@@ -31,6 +31,11 @@ R,
 במידה ויש נקודה לא בהירה, מצאתם טעות הקלדה, או חוסר דיוק - מוזמים ליצור איתי קשר במייל
 ophir.betser@gmail.com
 
+---
+
+עידכון אחרון  
+`r lubridate::now()`
+
 
 
 ```{r eval=FALSE, include=TRUE}

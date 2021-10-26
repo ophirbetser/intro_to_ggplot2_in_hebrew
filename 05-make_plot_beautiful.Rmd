@@ -1,13 +1,49 @@
 
 # להפוך את הגרף שלי ליפהיפה
 
+ניתן לשמור אוביקט 
+ggplot2
+בשם, ואז להוסיף לאוביקט השמור שכבות עיצוביות נוספת.
+זה מה שאדגים בפרק הזה. נתחיל בלשמור את הגרף שעבדנו עליו בפרקים הקודמים בשם
+
+```{r}
+my_plot <- 
+ggplot(iris) +
+  aes(x = Sepal.Length, y = Sepal.Width, color = Species) +
+  geom_point()
+
+my_plot
+```
+
+
 ## טקסט
 
-בלה בלה בלה
+```{r}
+my_plot_2 <- 
+my_plot +
+  labs(
+    title = "title",
+    subtitle = "subtitle",
+    x = "x lab",
+    y = "y lab",
+    color = "color lab"
+  )
+
+my_plot_2
+```
+
 
 ## תמות עיצוביות מוכנות מראש
 
-בלה בלה בלה
+```{r}
+my_plot_2 +
+  theme_classic()
+```
+
+```{r}
+my_plot_2 +
+  theme_dark()
+```
 
 ## יצירת תמות בעצמנו
 
@@ -15,7 +51,12 @@
 
 ## צבעים
 
-בלה בלה בלה
+```{r}
+my_plot_2 +
+  theme_classic() +
+  scale_color_brewer(palette = 2)
+```
+
 
 ## עיצוב הצירים
 

@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title> 2 למה כדאי להשתמש ב ggplot2 | מבוא ל ggplot2 בעברית</title>
-  <meta name="description" content=" 2 למה כדאי להשתמש ב ggplot2 | מבוא ל ggplot2 בעברית" />
+  <title> 7 הוספת שכבות לגרף | מבוא ל ggplot2 בעברית</title>
+  <meta name="description" content=" 7 הוספת שכבות לגרף | מבוא ל ggplot2 בעברית" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content=" 2 למה כדאי להשתמש ב ggplot2 | מבוא ל ggplot2 בעברית" />
+  <meta property="og:title" content=" 7 הוספת שכבות לגרף | מבוא ל ggplot2 בעברית" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content=" 2 למה כדאי להשתמש ב ggplot2 | מבוא ל ggplot2 בעברית" />
+  <meta name="twitter:title" content=" 7 הוספת שכבות לגרף | מבוא ל ggplot2 בעברית" />
   
   
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html"/>
-<link rel="next" href="תחביר-בסיסי.html"/>
+<link rel="prev" href="להפוך-את-הגרף-שלי-ליפהיפה.html"/>
+<link rel="next" href="ggeasy.html"/>
 <script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -205,74 +205,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="למה-כדאי-להשתמש-ב-ggplot2" class="section level1" number="2">
-<h1><span class="header-section-number"> 2</span> למה כדאי להשתמש ב ggplot2</h1>
-<hr />
-<ul>
-<li>חבילה בשלה</li>
-<li>קהילה גדולה</li>
-<li>הרבה חבילות תומכות</li>
-<li>גמישות מאוד גבוהה למשתמש</li>
-</ul>
-<div id="התקנת-הספריה" class="section level2" number="2.1">
-<h2><span class="header-section-number">2.1</span> התקנת הספריה</h2>
-<p>כדי להתקין את החבילה הריצו בקונסול של
-R
-את הפקודה הבאה:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;ggplot2&quot;</span>)</span></code></pre></div>
-<p>מעולה! כעת הספריה מותקנת על המחשב שלכם.
-כעת, בכל פעם שתרצו לעשות בה שימוש תהיו חייבים להריץ את הפקודה</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span></code></pre></div>
-<p>אשר תגרום ל
-R
-להבין שאתם מעוניינים לעשות שימוש בפקודות
-<code>ggplot2</code></p>
-</div>
-<div id="ספריות-משלימות" class="section level2" number="2.2">
-<h2><span class="header-section-number">2.2</span> ספריות משלימות</h2>
-<p><code>ggplot2</code>
-הפכה להיות הספריה הפופאולרית ביותר בשפת
-R
-ליצרית ויזאליזציות. יש מגוון אדיר של סוגי ויזאליזציות שונים. כל תחום בתעשיה או תחום באקדמיה מעלה דרישות יחודיות מהמערכת יצור הגרפים שתשרת את האירגון שלו, והפסריה החלה לתפוח ולהפוך לכבדה יותר. בשלב מסויים הוחלט להמשיך לתחזק רק את הפונקציות הקיימות בספריה, ולהפוך אותם למעולה בהן, ושפונקציות נוספות - יכתבו בספריות אחרות אשר ישלימו תכונות אשר רלוונטיות במקרי שימוש מסויים.</p>
-<p>דוגמא לספריות הללו:</p>
-<ul>
-<li>ggeasy</li>
-<li>ggforce</li>
-<li>ggtext</li>
-<li>esquisse</li>
-<li>ועוד רבות טובות ואחרות</li>
-</ul>
-</div>
-<div id="hello-world" class="section level2" number="2.3">
-<h2><span class="header-section-number">2.3</span> Hello World</h2>
-<p>מאוד מפורסם להתחיל מדריכים על שפות תכנות על ידי הדגמא של הדפסת המחרוזת
-“Hello World”.</p>
-<p>לדעתי יכול להיות נחמד להדגים בניה של גרף פשוט במדריך על גרפים!
-אבל אל תבהלו, כבר בסוף קריאת הפרק הבא תבינו את רוב מה שאדגים עכשיו.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(iris) <span class="sc">+</span></span>
-<span id="cb4-2"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(</span>
-<span id="cb4-3"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(</span>
-<span id="cb4-4"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#cb4-4" aria-hidden="true" tabindex="-1"></a>      <span class="at">x =</span> Sepal.Length,</span>
-<span id="cb4-5"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#cb4-5" aria-hidden="true" tabindex="-1"></a>      <span class="at">y =</span> Sepal.Width,</span>
-<span id="cb4-6"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#cb4-6" aria-hidden="true" tabindex="-1"></a>      <span class="at">color =</span> Species,</span>
-<span id="cb4-7"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#cb4-7" aria-hidden="true" tabindex="-1"></a>      <span class="at">shape =</span> Species</span>
-<span id="cb4-8"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#cb4-8" aria-hidden="true" tabindex="-1"></a>      )</span>
-<span id="cb4-9"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#cb4-9" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
-<span id="cb4-10"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() <span class="sc">+</span></span>
-<span id="cb4-11"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#cb4-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
-<span id="cb4-12"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#cb4-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">&quot;This is my Plot!&quot;</span></span>
-<span id="cb4-13"><a href="למה-כדאי-להשתמש-ב-ggplot2.html#cb4-13" aria-hidden="true" tabindex="-1"></a>    )</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<div id="הוספת-שכבות-לגרף" class="section level1" number="7">
+<h1><span class="header-section-number"> 7</span> הוספת שכבות לגרף</h1>
+<p>בלה בלה בלה</p>
 
-</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="תחביר-בסיסי.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="להפוך-את-הגרף-שלי-ליפהיפה.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="ggeasy.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -303,7 +247,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/ophirbetser/intro_to_ggplot2_in_hebrew/edit/master/01-intro.Rmd",
+"link": "https://github.com/ophirbetser/intro_to_ggplot2_in_hebrew/edit/master/07-add_layers.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -311,7 +255,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/ophirbetser/intro_to_ggplot2_in_hebrew/blob/master/01-intro.Rmd",
+"link": "https://github.com/ophirbetser/intro_to_ggplot2_in_hebrew/blob/master/07-add_layers.Rmd",
 "text": null
 },
 "download": null,

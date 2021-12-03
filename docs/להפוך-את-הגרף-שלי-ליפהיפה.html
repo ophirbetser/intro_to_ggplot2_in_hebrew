@@ -211,35 +211,35 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ggplot2
 בשם, ואז להוסיף לאוביקט השמור שכבות עיצוביות נוספת.
 זה מה שאדגים בפרק הזה. נתחיל בלשמור את הגרף שעבדנו עליו בפרקים הקודמים בשם</p>
-<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb24-1" aria-hidden="true" tabindex="-1"></a>my_plot <span class="ot">&lt;-</span> </span>
-<span id="cb24-2"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(iris) <span class="sc">+</span></span>
-<span id="cb24-3"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb24-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> Sepal.Length, <span class="at">y =</span> Sepal.Width, <span class="at">color =</span> Species) <span class="sc">+</span></span>
-<span id="cb24-4"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb24-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span>
-<span id="cb24-5"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb24-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-6"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb24-6" aria-hidden="true" tabindex="-1"></a>my_plot</span></code></pre></div>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb32-1" aria-hidden="true" tabindex="-1"></a>my_plot <span class="ot">&lt;-</span> </span>
+<span id="cb32-2"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(iris) <span class="sc">+</span></span>
+<span id="cb32-3"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb32-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> Sepal.Length, <span class="at">y =</span> Sepal.Width, <span class="at">color =</span> Species) <span class="sc">+</span></span>
+<span id="cb32-4"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb32-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span>
+<span id="cb32-5"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb32-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-6"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb32-6" aria-hidden="true" tabindex="-1"></a>my_plot</span></code></pre></div>
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-22-1.png" width="672" /></p>
 <div id="טקסט" class="section level2" number="6.1">
 <h2><span class="header-section-number">6.1</span> טקסט</h2>
-<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb25-1" aria-hidden="true" tabindex="-1"></a>my_plot_2 <span class="ot">&lt;-</span> </span>
-<span id="cb25-2"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb25-2" aria-hidden="true" tabindex="-1"></a>my_plot <span class="sc">+</span></span>
-<span id="cb25-3"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb25-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
-<span id="cb25-4"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb25-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">&quot;title&quot;</span>,</span>
-<span id="cb25-5"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb25-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">&quot;subtitle&quot;</span>,</span>
-<span id="cb25-6"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb25-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">&quot;x lab&quot;</span>,</span>
-<span id="cb25-7"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb25-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">&quot;y lab&quot;</span>,</span>
-<span id="cb25-8"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb25-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">&quot;color lab&quot;</span></span>
-<span id="cb25-9"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb25-9" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb25-10"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb25-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-11"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb25-11" aria-hidden="true" tabindex="-1"></a>my_plot_2</span></code></pre></div>
+<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb33-1" aria-hidden="true" tabindex="-1"></a>my_plot_2 <span class="ot">&lt;-</span> </span>
+<span id="cb33-2"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb33-2" aria-hidden="true" tabindex="-1"></a>my_plot <span class="sc">+</span></span>
+<span id="cb33-3"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb33-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb33-4"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb33-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">&quot;title&quot;</span>,</span>
+<span id="cb33-5"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb33-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">&quot;subtitle&quot;</span>,</span>
+<span id="cb33-6"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb33-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">&quot;x lab&quot;</span>,</span>
+<span id="cb33-7"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb33-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">&quot;y lab&quot;</span>,</span>
+<span id="cb33-8"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb33-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">&quot;color lab&quot;</span></span>
+<span id="cb33-9"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb33-9" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb33-10"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb33-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-11"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb33-11" aria-hidden="true" tabindex="-1"></a>my_plot_2</span></code></pre></div>
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-23-1.png" width="672" /></p>
 </div>
 <div id="תמות-עיצוביות-מוכנות-מראש" class="section level2" number="6.2">
 <h2><span class="header-section-number">6.2</span> תמות עיצוביות מוכנות מראש</h2>
-<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb26-1" aria-hidden="true" tabindex="-1"></a>my_plot_2 <span class="sc">+</span></span>
-<span id="cb26-2"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb26-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb34-1" aria-hidden="true" tabindex="-1"></a>my_plot_2 <span class="sc">+</span></span>
+<span id="cb34-2"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb34-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>()</span></code></pre></div>
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-24-1.png" width="672" /></p>
-<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb27-1" aria-hidden="true" tabindex="-1"></a>my_plot_2 <span class="sc">+</span></span>
-<span id="cb27-2"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb27-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_dark</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb35-1" aria-hidden="true" tabindex="-1"></a>my_plot_2 <span class="sc">+</span></span>
+<span id="cb35-2"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb35-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_dark</span>()</span></code></pre></div>
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-25-1.png" width="672" /></p>
 </div>
 <div id="יצירת-תמות-בעצמנו" class="section level2" number="6.3">
@@ -248,9 +248,9 @@ ggplot2
 </div>
 <div id="צבעים" class="section level2" number="6.4">
 <h2><span class="header-section-number">6.4</span> צבעים</h2>
-<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb28-1" aria-hidden="true" tabindex="-1"></a>my_plot_2 <span class="sc">+</span></span>
-<span id="cb28-2"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb28-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() <span class="sc">+</span></span>
-<span id="cb28-3"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb28-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_brewer</span>(<span class="at">palette =</span> <span class="st">&quot;Set2&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb36-1" aria-hidden="true" tabindex="-1"></a>my_plot_2 <span class="sc">+</span></span>
+<span id="cb36-2"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb36-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() <span class="sc">+</span></span>
+<span id="cb36-3"><a href="להפוך-את-הגרף-שלי-ליפהיפה.html#cb36-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_brewer</span>(<span class="at">palette =</span> <span class="st">&quot;Set2&quot;</span>)</span></code></pre></div>
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-26-1.png" width="672" /></p>
 </div>
 <div id="עיצוב-הצירים" class="section level2" number="6.5">

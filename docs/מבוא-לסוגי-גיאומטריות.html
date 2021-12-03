@@ -217,61 +217,77 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <code>color</code>.
 כך, ״אגיד״ שאני רוצה לצבוע כך נקודה בצבע שונה על פי משתנה מסויים.
 סו הנתונים שלנו מכיל מידע על 3 זנים שונים של פרחי איריס, אז אני אצבע כל זן בצבע אחר</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="מבוא-לסוגי-גיאומטריות.html#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(iris) <span class="sc">+</span></span>
-<span id="cb11-2"><a href="מבוא-לסוגי-גיאומטריות.html#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> Sepal.Length, <span class="at">y =</span> Sepal.Width, <span class="at">color =</span> Species) <span class="sc">+</span></span>
-<span id="cb11-3"><a href="מבוא-לסוגי-גיאומטריות.html#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="מבוא-לסוגי-גיאומטריות.html#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(iris) <span class="sc">+</span></span>
+<span id="cb12-2"><a href="מבוא-לסוגי-גיאומטריות.html#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> Sepal.Length, <span class="at">y =</span> Sepal.Width, <span class="at">color =</span> Species) <span class="sc">+</span></span>
+<span id="cb12-3"><a href="מבוא-לסוגי-גיאומטריות.html#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code></pre></div>
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
 <hr />
 <p>מגניב!</p>
 <p>דברים נחמדים נוספים שאני יכול להוסיף לגרף שלי, הם גודל שונה לכל נקודה על פי משתנה אחר, דבר שלמעשה מוסיף לגרף הדו מימדי מימד נתונים רציף נוסף.</p>
 <p>בנוסף - אפשר לתת לכל נקודה צורה אחרת, על פי משנה קטורי שנבחר. אשלב זאת בקוד שלי.</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="מבוא-לסוגי-גיאומטריות.html#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(iris) <span class="sc">+</span></span>
-<span id="cb12-2"><a href="מבוא-לסוגי-גיאומטריות.html#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(</span>
-<span id="cb12-3"><a href="מבוא-לסוגי-גיאומטריות.html#cb12-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> Sepal.Length, <span class="at">y =</span> Sepal.Width,</span>
-<span id="cb12-4"><a href="מבוא-לסוגי-גיאומטריות.html#cb12-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> Species, <span class="at">shape =</span> Species, <span class="at">size =</span> Petal.Width</span>
-<span id="cb12-5"><a href="מבוא-לסוגי-גיאומטריות.html#cb12-5" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
-<span id="cb12-6"><a href="מבוא-לסוגי-גיאומטריות.html#cb12-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="מבוא-לסוגי-גיאומטריות.html#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(iris) <span class="sc">+</span></span>
+<span id="cb13-2"><a href="מבוא-לסוגי-גיאומטריות.html#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(</span>
+<span id="cb13-3"><a href="מבוא-לסוגי-גיאומטריות.html#cb13-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> Sepal.Length, <span class="at">y =</span> Sepal.Width,</span>
+<span id="cb13-4"><a href="מבוא-לסוגי-גיאומטריות.html#cb13-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> Species, <span class="at">shape =</span> Species, <span class="at">size =</span> Petal.Width</span>
+<span id="cb13-5"><a href="מבוא-לסוגי-גיאומטריות.html#cb13-5" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
+<span id="cb13-6"><a href="מבוא-לסוגי-גיאומטריות.html#cb13-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code></pre></div>
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
 </div>
 <div id="גרף-עמודות" class="section level2" number="4.2">
 <h2><span class="header-section-number">4.2</span> גרף עמודות</h2>
-<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="מבוא-לסוגי-גיאומטריות.html#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(iris) <span class="sc">+</span></span>
-<span id="cb13-2"><a href="מבוא-לסוגי-גיאומטריות.html#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> Species, <span class="at">fill =</span> Species) <span class="sc">+</span></span>
-<span id="cb13-3"><a href="מבוא-לסוגי-גיאומטריות.html#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="מבוא-לסוגי-גיאומטריות.html#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(iris) <span class="sc">+</span></span>
+<span id="cb14-2"><a href="מבוא-לסוגי-גיאומטריות.html#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> Species, <span class="at">fill =</span> Species) <span class="sc">+</span></span>
+<span id="cb14-3"><a href="מבוא-לסוגי-גיאומטריות.html#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>()</span></code></pre></div>
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="מבוא-לסוגי-גיאומטריות.html#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(data.table)</span>
-<span id="cb14-2"><a href="מבוא-לסוגי-גיאומטריות.html#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb14-3"><a href="מבוא-לסוגי-גיאומטריות.html#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-4"><a href="מבוא-לסוגי-גיאומטריות.html#cb14-4" aria-hidden="true" tabindex="-1"></a>dt <span class="ot">&lt;-</span> <span class="fu">as.data.table</span>(iris)</span></code></pre></div>
-<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="מבוא-לסוגי-גיאומטריות.html#cb15-1" aria-hidden="true" tabindex="-1"></a>dt[,</span>
-<span id="cb15-2"><a href="מבוא-לסוגי-גיאומטריות.html#cb15-2" aria-hidden="true" tabindex="-1"></a>  .(<span class="at">mean_S_L =</span> <span class="fu">mean</span>(Sepal.Length)),</span>
-<span id="cb15-3"><a href="מבוא-לסוגי-גיאומטריות.html#cb15-3" aria-hidden="true" tabindex="-1"></a>  by <span class="ot">=</span> Species] <span class="sc">%&gt;%</span> </span>
-<span id="cb15-4"><a href="מבוא-לסוגי-גיאומטריות.html#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb15-5"><a href="מבוא-לסוגי-גיאומטריות.html#cb15-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> Species, <span class="at">y =</span> mean_S_L, <span class="at">fill =</span> Species) <span class="sc">+</span></span>
-<span id="cb15-6"><a href="מבוא-לסוגי-גיאומטריות.html#cb15-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">&quot;identity&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="מבוא-לסוגי-גיאומטריות.html#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(data.table)</span></code></pre></div>
+<pre><code>## data.table 1.14.0 using 1 threads (see ?getDTthreads).  Latest news: r-datatable.com</code></pre>
+<pre><code>## **********
+## This installation of data.table has not detected OpenMP support. It should still work but in single-threaded mode.
+## This is a Mac. Please read https://mac.r-project.org/openmp/. Please engage with Apple and ask them for support. Check r-datatable.com for updates, and our Mac instructions here: https://github.com/Rdatatable/data.table/wiki/Installation. After several years of many reports of installation problems on Mac, it&#39;s time to gingerly point out that there have been no similar problems on Windows or Linux.
+## **********</code></pre>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="מבוא-לסוגי-גיאומטריות.html#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code></pre></div>
+<pre><code>## ── Attaching packages ──────────────────────────────────────────────────────────────────── tidyverse 1.3.1 ──</code></pre>
+<pre><code>## ✓ tibble  3.1.5     ✓ dplyr   1.0.7
+## ✓ tidyr   1.1.3     ✓ stringr 1.4.0
+## ✓ readr   2.0.1     ✓ forcats 0.5.1
+## ✓ purrr   0.3.4</code></pre>
+<pre><code>## ── Conflicts ─────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+## x dplyr::between()   masks data.table::between()
+## x dplyr::filter()    masks stats::filter()
+## x dplyr::first()     masks data.table::first()
+## x dplyr::lag()       masks stats::lag()
+## x dplyr::last()      masks data.table::last()
+## x purrr::transpose() masks data.table::transpose()</code></pre>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="מבוא-לסוגי-גיאומטריות.html#cb22-1" aria-hidden="true" tabindex="-1"></a>dt <span class="ot">&lt;-</span> <span class="fu">as.data.table</span>(iris)</span></code></pre></div>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="מבוא-לסוגי-גיאומטריות.html#cb23-1" aria-hidden="true" tabindex="-1"></a>dt[,</span>
+<span id="cb23-2"><a href="מבוא-לסוגי-גיאומטריות.html#cb23-2" aria-hidden="true" tabindex="-1"></a>  .(<span class="at">mean_S_L =</span> <span class="fu">mean</span>(Sepal.Length)),</span>
+<span id="cb23-3"><a href="מבוא-לסוגי-גיאומטריות.html#cb23-3" aria-hidden="true" tabindex="-1"></a>  by <span class="ot">=</span> Species] <span class="sc">%&gt;%</span> </span>
+<span id="cb23-4"><a href="מבוא-לסוגי-גיאומטריות.html#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb23-5"><a href="מבוא-לסוגי-גיאומטריות.html#cb23-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> Species, <span class="at">y =</span> mean_S_L, <span class="at">fill =</span> Species) <span class="sc">+</span></span>
+<span id="cb23-6"><a href="מבוא-לסוגי-גיאומטריות.html#cb23-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">&quot;identity&quot;</span>)</span></code></pre></div>
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
 </div>
 <div id="היסטוגרמה" class="section level2" number="4.3">
 <h2><span class="header-section-number">4.3</span> היסטוגרמה</h2>
-<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="מבוא-לסוגי-גיאומטריות.html#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(iris) <span class="sc">+</span></span>
-<span id="cb16-2"><a href="מבוא-לסוגי-גיאומטריות.html#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> Sepal.Length) <span class="sc">+</span></span>
-<span id="cb16-3"><a href="מבוא-לסוגי-גיאומטריות.html#cb16-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="מבוא-לסוגי-גיאומטריות.html#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(iris) <span class="sc">+</span></span>
+<span id="cb24-2"><a href="מבוא-לסוגי-גיאומטריות.html#cb24-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> Sepal.Length) <span class="sc">+</span></span>
+<span id="cb24-3"><a href="מבוא-לסוגי-גיאומטריות.html#cb24-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>()</span></code></pre></div>
 <pre><code>## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="מבוא-לסוגי-גיאומטריות.html#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(iris) <span class="sc">+</span></span>
-<span id="cb18-2"><a href="מבוא-לסוגי-גיאומטריות.html#cb18-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> Sepal.Length) <span class="sc">+</span></span>
-<span id="cb18-3"><a href="מבוא-לסוגי-גיאומטריות.html#cb18-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">bins =</span> <span class="dv">10</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="מבוא-לסוגי-גיאומטריות.html#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(iris) <span class="sc">+</span></span>
+<span id="cb26-2"><a href="מבוא-לסוגי-גיאומטריות.html#cb26-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> Sepal.Length) <span class="sc">+</span></span>
+<span id="cb26-3"><a href="מבוא-לסוגי-גיאומטריות.html#cb26-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">bins =</span> <span class="dv">10</span>)</span></code></pre></div>
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
-<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="מבוא-לסוגי-גיאומטריות.html#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(iris) <span class="sc">+</span></span>
-<span id="cb19-2"><a href="מבוא-לסוגי-גיאומטריות.html#cb19-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> Sepal.Length, <span class="at">fill =</span> Species) <span class="sc">+</span></span>
-<span id="cb19-3"><a href="מבוא-לסוגי-גיאומטריות.html#cb19-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">bins =</span> <span class="dv">10</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="מבוא-לסוגי-גיאומטריות.html#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(iris) <span class="sc">+</span></span>
+<span id="cb27-2"><a href="מבוא-לסוגי-גיאומטריות.html#cb27-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> Sepal.Length, <span class="at">fill =</span> Species) <span class="sc">+</span></span>
+<span id="cb27-3"><a href="מבוא-לסוגי-גיאומטריות.html#cb27-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">bins =</span> <span class="dv">10</span>)</span></code></pre></div>
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
 </div>
 <div id="גרף-קופסא" class="section level2" number="4.4">
 <h2><span class="header-section-number">4.4</span> גרף קופסא</h2>
-<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="מבוא-לסוגי-גיאומטריות.html#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(iris) <span class="sc">+</span></span>
-<span id="cb20-2"><a href="מבוא-לסוגי-גיאומטריות.html#cb20-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> Species, <span class="at">y =</span> Sepal.Length) <span class="sc">+</span></span>
-<span id="cb20-3"><a href="מבוא-לסוגי-גיאומטריות.html#cb20-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="מבוא-לסוגי-גיאומטריות.html#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(iris) <span class="sc">+</span></span>
+<span id="cb28-2"><a href="מבוא-לסוגי-גיאומטריות.html#cb28-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> Species, <span class="at">y =</span> Sepal.Length) <span class="sc">+</span></span>
+<span id="cb28-3"><a href="מבוא-לסוגי-גיאומטריות.html#cb28-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>()</span></code></pre></div>
 <p><img src="bookdownproj_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
 
 </div>

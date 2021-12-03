@@ -1,5 +1,53 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
 
 # הוספת שכבות לגרף
 
 בלה בלה בלה
 
+```{r}
+iris <- as.data.table(iris)
+plot_data <- 
+  iris[, 
+       .(mean_sl = mean(Sepal.Length)),
+         by = Species]
+```
+
+
+```{r}
+plot_data %>% 
+  ggplot() +
+  aes(y = mean_sl, x = Species) +
+  geom_bar(stat = "identity")
+```
+
+```{r}
+iris %>% 
+  ggplot() +
+  aes(y = Sepal.Length, x = Species) +
+  geom_jitter(width = 0.1, alpha = 0.7)
+```
+
+```{r}
+iris %>% 
+  ggplot() +
+  aes(y = Sepal.Length, x = Species) +
+  geom_jitter(width = 0.1, alpha = 0.7) +
+  stat_summary(fun = mean, colour = "red", size = 1, geom = "point")
+```
+
+
+```{r}
+stat_sum_df <- function(fun, geom="crossbar", ...) {
+  stat_summary(fun.data = fun, colour = "blue", geom = geom, width = 0.2, ...)
+}
+
+iris %>% 
+  ggplot() +
+  aes(y = Sepal.Length, x = Species) +
+  geom_jitter(width = 0.1, alpha = 0.7) +
+  stat_sum_df("mean_cl_boot")
+```
